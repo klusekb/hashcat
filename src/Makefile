@@ -924,6 +924,9 @@ ifeq ($(ENABLE_UNRAR),0)
 MODULES_SRC     := $(filter-out src/modules/module_23800.c,$(MODULES_SRC))
 MODULES_DISABLE += modules/module_23800.so
 MODULES_DISABLE += modules/module_23800.dll
+MODULES_SRC     := $(filter-out src/modules/module_23801.c,$(MODULES_SRC))
+MODULES_DISABLE += modules/module_23801.so
+MODULES_DISABLE += modules/module_23801.dll
 endif
 
 $(MODULES_DISABLE): ;
